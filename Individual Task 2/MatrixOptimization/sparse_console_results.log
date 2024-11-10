@@ -1,0 +1,833 @@
+# JMH version: 1.35
+# VM version: JDK 17.0.8, OpenJDK 64-Bit Server VM, 17.0.8+7-b1000.22
+# VM invoker: C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\jbr\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=56617:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.SparseMatrixBenchmark.testApacheSparseMatrixMultiplication
+# Parameters: (n = 256)
+
+# Run progress: 0,00% complete, ETA 00:10:00
+# Fork: 1 of 5
+# Warmup Iteration   1: 22,301 ms/op
+# Warmup Iteration   2: 21,705 ms/op
+# Warmup Iteration   3: 21,236 ms/op
+# Warmup Iteration   4: 21,356 ms/op
+# Warmup Iteration   5: 20,988 ms/op
+# Warmup Iteration   6: 20,770 ms/op
+# Warmup Iteration   7: 20,804 ms/op
+# Warmup Iteration   8: 20,846 ms/op
+# Warmup Iteration   9: 20,813 ms/op
+# Warmup Iteration  10: 21,102 ms/op
+Iteration   1: 20,919 ms/op
+Iteration   2: 20,797 ms/op
+Iteration   3: 20,918 ms/op
+Iteration   4: 20,765 ms/op
+Iteration   5: 20,790 ms/op
+Iteration   6: 20,870 ms/op
+Iteration   7: 21,002 ms/op
+Iteration   8: 20,811 ms/op
+Iteration   9: 20,845 ms/op
+Iteration  10: 20,820 ms/op
+
+# Run progress: 3,33% complete, ETA 00:10:19
+# Fork: 2 of 5
+# Warmup Iteration   1: 22,118 ms/op
+# Warmup Iteration   2: 21,629 ms/op
+# Warmup Iteration   3: 21,221 ms/op
+# Warmup Iteration   4: 21,231 ms/op
+# Warmup Iteration   5: 21,286 ms/op
+# Warmup Iteration   6: 21,112 ms/op
+# Warmup Iteration   7: 21,083 ms/op
+# Warmup Iteration   8: 21,051 ms/op
+# Warmup Iteration   9: 20,878 ms/op
+# Warmup Iteration  10: 21,286 ms/op
+Iteration   1: 21,329 ms/op
+Iteration   2: 21,158 ms/op
+Iteration   3: 21,247 ms/op
+Iteration   4: 21,191 ms/op
+Iteration   5: 21,205 ms/op
+Iteration   6: 21,137 ms/op
+Iteration   7: 21,114 ms/op
+Iteration   8: 21,104 ms/op
+Iteration   9: 21,003 ms/op
+Iteration  10: 21,094 ms/op
+
+# Run progress: 6,67% complete, ETA 00:09:56
+# Fork: 3 of 5
+# Warmup Iteration   1: 22,144 ms/op
+# Warmup Iteration   2: 21,415 ms/op
+# Warmup Iteration   3: 21,012 ms/op
+# Warmup Iteration   4: 21,274 ms/op
+# Warmup Iteration   5: 21,033 ms/op
+# Warmup Iteration   6: 20,990 ms/op
+# Warmup Iteration   7: 20,991 ms/op
+# Warmup Iteration   8: 20,997 ms/op
+# Warmup Iteration   9: 20,995 ms/op
+# Warmup Iteration  10: 21,196 ms/op
+Iteration   1: 21,046 ms/op
+Iteration   2: 20,961 ms/op
+Iteration   3: 21,047 ms/op
+Iteration   4: 21,028 ms/op
+Iteration   5: 21,006 ms/op
+Iteration   6: 21,049 ms/op
+Iteration   7: 20,973 ms/op
+Iteration   8: 20,988 ms/op
+Iteration   9: 20,967 ms/op
+Iteration  10: 21,144 ms/op
+
+# Run progress: 10,00% complete, ETA 00:09:34
+# Fork: 4 of 5
+# Warmup Iteration   1: 22,822 ms/op
+# Warmup Iteration   2: 22,318 ms/op
+# Warmup Iteration   3: 21,915 ms/op
+# Warmup Iteration   4: 21,947 ms/op
+# Warmup Iteration   5: 21,868 ms/op
+# Warmup Iteration   6: 22,061 ms/op
+# Warmup Iteration   7: 21,966 ms/op
+# Warmup Iteration   8: 21,801 ms/op
+# Warmup Iteration   9: 21,886 ms/op
+# Warmup Iteration  10: 21,865 ms/op
+Iteration   1: 21,907 ms/op
+Iteration   2: 21,789 ms/op
+Iteration   3: 21,816 ms/op
+Iteration   4: 21,961 ms/op
+Iteration   5: 21,963 ms/op
+Iteration   6: 21,803 ms/op
+Iteration   7: 21,748 ms/op
+Iteration   8: 21,739 ms/op
+Iteration   9: 21,886 ms/op
+Iteration  10: 21,888 ms/op
+
+# Run progress: 13,33% complete, ETA 00:09:13
+# Fork: 5 of 5
+# Warmup Iteration   1: 22,440 ms/op
+# Warmup Iteration   2: 21,807 ms/op
+# Warmup Iteration   3: 21,346 ms/op
+# Warmup Iteration   4: 21,499 ms/op
+# Warmup Iteration   5: 21,380 ms/op
+# Warmup Iteration   6: 21,298 ms/op
+# Warmup Iteration   7: 21,292 ms/op
+# Warmup Iteration   8: 21,213 ms/op
+# Warmup Iteration   9: 21,244 ms/op
+# Warmup Iteration  10: 21,425 ms/op
+Iteration   1: 21,499 ms/op
+Iteration   2: 21,420 ms/op
+Iteration   3: 21,186 ms/op
+Iteration   4: 21,462 ms/op
+Iteration   5: 21,241 ms/op
+Iteration   6: 21,217 ms/op
+Iteration   7: 21,111 ms/op
+Iteration   8: 21,191 ms/op
+Iteration   9: 21,441 ms/op
+Iteration  10: 21,480 ms/op
+
+
+Result "org.example.SparseMatrixBenchmark.testApacheSparseMatrixMultiplication":
+  21,242 ±(99.9%) 0,177 ms/op [Average]
+  (min, avg, max) = (20,765, 21,242, 21,963), stdev = 0,357
+  CI (99.9%): [21,065, 21,418] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8, OpenJDK 64-Bit Server VM, 17.0.8+7-b1000.22
+# VM invoker: C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\jbr\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=56617:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.SparseMatrixBenchmark.testApacheSparseMatrixMultiplication
+# Parameters: (n = 512)
+
+# Run progress: 16,67% complete, ETA 00:08:52
+# Fork: 1 of 5
+# Warmup Iteration   1: 176,415 ms/op
+# Warmup Iteration   2: 174,430 ms/op
+# Warmup Iteration   3: 173,158 ms/op
+# Warmup Iteration   4: 173,581 ms/op
+# Warmup Iteration   5: 172,594 ms/op
+# Warmup Iteration   6: 172,998 ms/op
+# Warmup Iteration   7: 173,285 ms/op
+# Warmup Iteration   8: 172,369 ms/op
+# Warmup Iteration   9: 173,905 ms/op
+# Warmup Iteration  10: 173,186 ms/op
+Iteration   1: 173,281 ms/op
+Iteration   2: 173,510 ms/op
+Iteration   3: 172,690 ms/op
+Iteration   4: 172,847 ms/op
+Iteration   5: 174,039 ms/op
+Iteration   6: 173,257 ms/op
+Iteration   7: 172,633 ms/op
+Iteration   8: 173,091 ms/op
+Iteration   9: 172,198 ms/op
+Iteration  10: 173,444 ms/op
+
+# Run progress: 20,00% complete, ETA 00:08:32
+# Fork: 2 of 5
+# Warmup Iteration   1: 169,178 ms/op
+# Warmup Iteration   2: 163,694 ms/op
+# Warmup Iteration   3: 165,991 ms/op
+# Warmup Iteration   4: 162,376 ms/op
+# Warmup Iteration   5: 162,990 ms/op
+# Warmup Iteration   6: 162,480 ms/op
+# Warmup Iteration   7: 161,905 ms/op
+# Warmup Iteration   8: 162,059 ms/op
+# Warmup Iteration   9: 162,093 ms/op
+# Warmup Iteration  10: 162,606 ms/op
+Iteration   1: 162,327 ms/op
+Iteration   2: 162,595 ms/op
+Iteration   3: 162,710 ms/op
+Iteration   4: 162,535 ms/op
+Iteration   5: 162,348 ms/op
+Iteration   6: 162,505 ms/op
+Iteration   7: 162,758 ms/op
+Iteration   8: 162,822 ms/op
+Iteration   9: 162,811 ms/op
+Iteration  10: 161,846 ms/op
+
+# Run progress: 23,33% complete, ETA 00:08:18
+# Fork: 3 of 5
+# Warmup Iteration   1: 176,860 ms/op
+# Warmup Iteration   2: 175,349 ms/op
+# Warmup Iteration   3: 175,061 ms/op
+# Warmup Iteration   4: 174,153 ms/op
+# Warmup Iteration   5: 174,458 ms/op
+# Warmup Iteration   6: 176,342 ms/op
+# Warmup Iteration   7: 174,196 ms/op
+# Warmup Iteration   8: 173,775 ms/op
+# Warmup Iteration   9: 173,667 ms/op
+# Warmup Iteration  10: 175,282 ms/op
+Iteration   1: 175,144 ms/op
+Iteration   2: 175,653 ms/op
+Iteration   3: 175,285 ms/op
+Iteration   4: 174,616 ms/op
+Iteration   5: 176,447 ms/op
+Iteration   6: 175,423 ms/op
+Iteration   7: 174,342 ms/op
+Iteration   8: 175,099 ms/op
+Iteration   9: 173,556 ms/op
+Iteration  10: 174,042 ms/op
+
+# Run progress: 26,67% complete, ETA 00:07:57
+# Fork: 4 of 5
+# Warmup Iteration   1: 186,116 ms/op
+# Warmup Iteration   2: 187,070 ms/op
+# Warmup Iteration   3: 186,013 ms/op
+# Warmup Iteration   4: 185,907 ms/op
+# Warmup Iteration   5: 186,050 ms/op
+# Warmup Iteration   6: 186,382 ms/op
+# Warmup Iteration   7: 186,553 ms/op
+# Warmup Iteration   8: 188,237 ms/op
+# Warmup Iteration   9: 186,843 ms/op
+# Warmup Iteration  10: 186,239 ms/op
+Iteration   1: 185,858 ms/op
+Iteration   2: 185,484 ms/op
+Iteration   3: 186,089 ms/op
+Iteration   4: 187,327 ms/op
+Iteration   5: 186,521 ms/op
+Iteration   6: 187,457 ms/op
+Iteration   7: 187,390 ms/op
+Iteration   8: 186,303 ms/op
+Iteration   9: 186,922 ms/op
+Iteration  10: 185,636 ms/op
+
+# Run progress: 30,00% complete, ETA 00:07:39
+# Fork: 5 of 5
+# Warmup Iteration   1: 179,143 ms/op
+# Warmup Iteration   2: 176,506 ms/op
+# Warmup Iteration   3: 176,549 ms/op
+# Warmup Iteration   4: 177,463 ms/op
+# Warmup Iteration   5: 176,293 ms/op
+# Warmup Iteration   6: 175,742 ms/op
+# Warmup Iteration   7: 176,496 ms/op
+# Warmup Iteration   8: 175,777 ms/op
+# Warmup Iteration   9: 176,252 ms/op
+# Warmup Iteration  10: 176,234 ms/op
+Iteration   1: 175,564 ms/op
+Iteration   2: 176,281 ms/op
+Iteration   3: 176,213 ms/op
+Iteration   4: 175,778 ms/op
+Iteration   5: 175,628 ms/op
+Iteration   6: 176,419 ms/op
+Iteration   7: 177,935 ms/op
+Iteration   8: 175,770 ms/op
+Iteration   9: 176,259 ms/op
+Iteration  10: 175,865 ms/op
+
+
+Result "org.example.SparseMatrixBenchmark.testApacheSparseMatrixMultiplication":
+  174,651 ±(99.9%) 3,835 ms/op [Average]
+  (min, avg, max) = (161,846, 174,651, 187,457), stdev = 7,747
+  CI (99.9%): [170,816, 178,486] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8, OpenJDK 64-Bit Server VM, 17.0.8+7-b1000.22
+# VM invoker: C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\jbr\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=56617:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.SparseMatrixBenchmark.testApacheSparseMatrixMultiplication
+# Parameters: (n = 1000)
+
+# Run progress: 33,33% complete, ETA 00:07:17
+# Fork: 1 of 5
+# Warmup Iteration   1: 1208,412 ms/op
+# Warmup Iteration   2: 1215,063 ms/op
+# Warmup Iteration   3: 1151,619 ms/op
+# Warmup Iteration   4: 1191,965 ms/op
+# Warmup Iteration   5: 1194,511 ms/op
+# Warmup Iteration   6: 1192,360 ms/op
+# Warmup Iteration   7: 1212,389 ms/op
+# Warmup Iteration   8: 1192,940 ms/op
+# Warmup Iteration   9: 1188,713 ms/op
+# Warmup Iteration  10: 1322,684 ms/op
+Iteration   1: 1317,066 ms/op
+Iteration   2: 1326,798 ms/op
+Iteration   3: 1322,335 ms/op
+Iteration   4: 1344,789 ms/op
+Iteration   5: 1328,546 ms/op
+Iteration   6: 1319,526 ms/op
+Iteration   7: 1325,109 ms/op
+Iteration   8: 1317,633 ms/op
+Iteration   9: 1319,016 ms/op
+Iteration  10: 1321,126 ms/op
+
+# Run progress: 36,67% complete, ETA 00:07:03
+# Fork: 2 of 5
+# Warmup Iteration   1: 1208,500 ms/op
+# Warmup Iteration   2: 1197,714 ms/op
+# Warmup Iteration   3: 1158,900 ms/op
+# Warmup Iteration   4: 1174,758 ms/op
+# Warmup Iteration   5: 1193,135 ms/op
+# Warmup Iteration   6: 1204,873 ms/op
+# Warmup Iteration   7: 1215,224 ms/op
+# Warmup Iteration   8: 1222,314 ms/op
+# Warmup Iteration   9: 1192,662 ms/op
+# Warmup Iteration  10: 1209,121 ms/op
+Iteration   1: 1212,728 ms/op
+Iteration   2: 1202,585 ms/op
+Iteration   3: 1213,775 ms/op
+Iteration   4: 1210,161 ms/op
+Iteration   5: 1248,491 ms/op
+Iteration   6: 1227,389 ms/op
+Iteration   7: 1236,628 ms/op
+Iteration   8: 1211,087 ms/op
+Iteration   9: 1224,128 ms/op
+Iteration  10: 1234,891 ms/op
+
+# Run progress: 40,00% complete, ETA 00:06:45
+# Fork: 3 of 5
+# Warmup Iteration   1: 1221,265 ms/op
+# Warmup Iteration   2: 1196,725 ms/op
+# Warmup Iteration   3: 1184,961 ms/op
+# Warmup Iteration   4: 1187,392 ms/op
+# Warmup Iteration   5: 1191,523 ms/op
+# Warmup Iteration   6: 1178,718 ms/op
+# Warmup Iteration   7: 1180,752 ms/op
+# Warmup Iteration   8: 1211,176 ms/op
+# Warmup Iteration   9: 1200,520 ms/op
+# Warmup Iteration  10: 1218,470 ms/op
+Iteration   1: 1228,774 ms/op
+Iteration   2: 1231,284 ms/op
+Iteration   3: 1234,872 ms/op
+Iteration   4: 1225,018 ms/op
+Iteration   5: 1231,753 ms/op
+Iteration   6: 1235,449 ms/op
+Iteration   7: 1238,430 ms/op
+Iteration   8: 1227,827 ms/op
+Iteration   9: 1250,530 ms/op
+Iteration  10: 1235,266 ms/op
+
+# Run progress: 43,33% complete, ETA 00:06:26
+# Fork: 4 of 5
+# Warmup Iteration   1: 1196,181 ms/op
+# Warmup Iteration   2: 1186,938 ms/op
+# Warmup Iteration   3: 1156,950 ms/op
+# Warmup Iteration   4: 1199,957 ms/op
+# Warmup Iteration   5: 1173,949 ms/op
+# Warmup Iteration   6: 1169,175 ms/op
+# Warmup Iteration   7: 1167,297 ms/op
+# Warmup Iteration   8: 1173,616 ms/op
+# Warmup Iteration   9: 1218,083 ms/op
+# Warmup Iteration  10: 1331,468 ms/op
+Iteration   1: 1338,676 ms/op
+Iteration   2: 1367,319 ms/op
+Iteration   3: 1397,244 ms/op
+Iteration   4: 1467,110 ms/op
+Iteration   5: 1419,711 ms/op
+Iteration   6: 1359,640 ms/op
+Iteration   7: 1304,654 ms/op
+Iteration   8: 1324,356 ms/op
+Iteration   9: 1331,847 ms/op
+Iteration  10: 1389,222 ms/op
+
+# Run progress: 46,67% complete, ETA 00:06:08
+# Fork: 5 of 5
+# Warmup Iteration   1: 1269,351 ms/op
+# Warmup Iteration   2: 1198,608 ms/op
+# Warmup Iteration   3: 1177,789 ms/op
+# Warmup Iteration   4: 1175,660 ms/op
+# Warmup Iteration   5: 1196,772 ms/op
+# Warmup Iteration   6: 1193,713 ms/op
+# Warmup Iteration   7: 1274,372 ms/op
+# Warmup Iteration   8: 1283,948 ms/op
+# Warmup Iteration   9: 1288,710 ms/op
+# Warmup Iteration  10: 1364,089 ms/op
+Iteration   1: 1384,222 ms/op
+Iteration   2: 1324,534 ms/op
+Iteration   3: 1344,265 ms/op
+Iteration   4: 1352,683 ms/op
+Iteration   5: 1378,501 ms/op
+Iteration   6: 1349,738 ms/op
+Iteration   7: 1327,930 ms/op
+Iteration   8: 1397,046 ms/op
+Iteration   9: 1397,346 ms/op
+Iteration  10: 1352,356 ms/op
+
+
+Result "org.example.SparseMatrixBenchmark.testApacheSparseMatrixMultiplication":
+  1302,228 ±(99.9%) 33,706 ms/op [Average]
+  (min, avg, max) = (1202,585, 1302,228, 1467,110), stdev = 68,087
+  CI (99.9%): [1268,523, 1335,934] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8, OpenJDK 64-Bit Server VM, 17.0.8+7-b1000.22
+# VM invoker: C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\jbr\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=56617:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.SparseMatrixBenchmark.testCustomSparseMatrixMultiplication
+# Parameters: (n = 256)
+
+# Run progress: 50,00% complete, ETA 00:05:49
+# Fork: 1 of 5
+# Warmup Iteration   1: 92,873 ms/op
+# Warmup Iteration   2: 76,661 ms/op
+# Warmup Iteration   3: 76,894 ms/op
+# Warmup Iteration   4: 83,768 ms/op
+# Warmup Iteration   5: 74,618 ms/op
+# Warmup Iteration   6: 72,502 ms/op
+# Warmup Iteration   7: 73,473 ms/op
+# Warmup Iteration   8: 78,375 ms/op
+# Warmup Iteration   9: 74,363 ms/op
+# Warmup Iteration  10: 73,750 ms/op
+Iteration   1: 73,159 ms/op
+Iteration   2: 73,805 ms/op
+Iteration   3: 73,796 ms/op
+Iteration   4: 72,682 ms/op
+Iteration   5: 73,304 ms/op
+Iteration   6: 74,008 ms/op
+Iteration   7: 72,759 ms/op
+Iteration   8: 73,426 ms/op
+Iteration   9: 73,064 ms/op
+Iteration  10: 73,778 ms/op
+
+# Run progress: 53,33% complete, ETA 00:05:24
+# Fork: 2 of 5
+# Warmup Iteration   1: 85,315 ms/op
+# Warmup Iteration   2: 72,654 ms/op
+# Warmup Iteration   3: 73,363 ms/op
+# Warmup Iteration   4: 75,164 ms/op
+# Warmup Iteration   5: 73,861 ms/op
+# Warmup Iteration   6: 73,894 ms/op
+# Warmup Iteration   7: 71,988 ms/op
+# Warmup Iteration   8: 73,082 ms/op
+# Warmup Iteration   9: 71,670 ms/op
+# Warmup Iteration  10: 72,924 ms/op
+Iteration   1: 72,332 ms/op
+Iteration   2: 72,071 ms/op
+Iteration   3: 72,382 ms/op
+Iteration   4: 73,550 ms/op
+Iteration   5: 73,313 ms/op
+Iteration   6: 71,947 ms/op
+Iteration   7: 71,512 ms/op
+Iteration   8: 73,088 ms/op
+Iteration   9: 74,357 ms/op
+Iteration  10: 83,177 ms/op
+
+# Run progress: 56,67% complete, ETA 00:04:59
+# Fork: 3 of 5
+# Warmup Iteration   1: 94,643 ms/op
+# Warmup Iteration   2: 80,653 ms/op
+# Warmup Iteration   3: 76,822 ms/op
+# Warmup Iteration   4: 76,004 ms/op
+# Warmup Iteration   5: 78,705 ms/op
+# Warmup Iteration   6: 74,815 ms/op
+# Warmup Iteration   7: 76,077 ms/op
+# Warmup Iteration   8: 77,495 ms/op
+# Warmup Iteration   9: 75,346 ms/op
+# Warmup Iteration  10: 72,754 ms/op
+Iteration   1: 72,033 ms/op
+Iteration   2: 73,301 ms/op
+Iteration   3: 70,991 ms/op
+Iteration   4: 70,764 ms/op
+Iteration   5: 70,815 ms/op
+Iteration   6: 69,922 ms/op
+Iteration   7: 74,511 ms/op
+Iteration   8: 78,767 ms/op
+Iteration   9: 76,682 ms/op
+Iteration  10: 71,916 ms/op
+
+# Run progress: 60,00% complete, ETA 00:04:36
+# Fork: 4 of 5
+# Warmup Iteration   1: 85,921 ms/op
+# Warmup Iteration   2: 68,579 ms/op
+# Warmup Iteration   3: 72,231 ms/op
+# Warmup Iteration   4: 71,082 ms/op
+# Warmup Iteration   5: 70,832 ms/op
+# Warmup Iteration   6: 76,103 ms/op
+# Warmup Iteration   7: 72,359 ms/op
+# Warmup Iteration   8: 75,556 ms/op
+# Warmup Iteration   9: 71,127 ms/op
+# Warmup Iteration  10: 75,447 ms/op
+Iteration   1: 72,962 ms/op
+Iteration   2: 73,858 ms/op
+Iteration   3: 73,553 ms/op
+Iteration   4: 71,922 ms/op
+Iteration   5: 70,342 ms/op
+Iteration   6: 69,073 ms/op
+Iteration   7: 66,694 ms/op
+Iteration   8: 70,435 ms/op
+Iteration   9: 68,326 ms/op
+Iteration  10: 69,855 ms/op
+
+# Run progress: 63,33% complete, ETA 00:04:12
+# Fork: 5 of 5
+# Warmup Iteration   1: 98,670 ms/op
+# Warmup Iteration   2: 87,403 ms/op
+# Warmup Iteration   3: 84,005 ms/op
+# Warmup Iteration   4: 78,693 ms/op
+# Warmup Iteration   5: 72,202 ms/op
+# Warmup Iteration   6: 76,130 ms/op
+# Warmup Iteration   7: 75,966 ms/op
+# Warmup Iteration   8: 78,434 ms/op
+# Warmup Iteration   9: 76,015 ms/op
+# Warmup Iteration  10: 89,277 ms/op
+Iteration   1: 83,410 ms/op
+Iteration   2: 79,453 ms/op
+Iteration   3: 78,089 ms/op
+Iteration   4: 79,105 ms/op
+Iteration   5: 76,337 ms/op
+Iteration   6: 76,130 ms/op
+Iteration   7: 73,158 ms/op
+Iteration   8: 71,814 ms/op
+Iteration   9: 72,669 ms/op
+Iteration  10: 73,655 ms/op
+
+
+Result "org.example.SparseMatrixBenchmark.testCustomSparseMatrixMultiplication":
+  73,441 ±(99.9%) 1,609 ms/op [Average]
+  (min, avg, max) = (66,694, 73,441, 83,410), stdev = 3,251
+  CI (99.9%): [71,832, 75,050] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8, OpenJDK 64-Bit Server VM, 17.0.8+7-b1000.22
+# VM invoker: C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\jbr\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=56617:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.SparseMatrixBenchmark.testCustomSparseMatrixMultiplication
+# Parameters: (n = 512)
+
+# Run progress: 66,67% complete, ETA 00:03:48
+# Fork: 1 of 5
+# Warmup Iteration   1: 792,888 ms/op
+# Warmup Iteration   2: 811,609 ms/op
+# Warmup Iteration   3: 702,628 ms/op
+# Warmup Iteration   4: 682,821 ms/op
+# Warmup Iteration   5: 789,379 ms/op
+# Warmup Iteration   6: 716,184 ms/op
+# Warmup Iteration   7: 764,463 ms/op
+# Warmup Iteration   8: 743,999 ms/op
+# Warmup Iteration   9: 727,062 ms/op
+# Warmup Iteration  10: 673,046 ms/op
+Iteration   1: 752,101 ms/op
+Iteration   2: 687,181 ms/op
+Iteration   3: 691,667 ms/op
+Iteration   4: 682,764 ms/op
+Iteration   5: 710,591 ms/op
+Iteration   6: 683,096 ms/op
+Iteration   7: 731,720 ms/op
+Iteration   8: 741,151 ms/op
+Iteration   9: 745,856 ms/op
+Iteration  10: 718,537 ms/op
+
+# Run progress: 70,00% complete, ETA 00:03:29
+# Fork: 2 of 5
+# Warmup Iteration   1: 801,182 ms/op
+# Warmup Iteration   2: 761,178 ms/op
+# Warmup Iteration   3: 706,096 ms/op
+# Warmup Iteration   4: 733,963 ms/op
+# Warmup Iteration   5: 709,668 ms/op
+# Warmup Iteration   6: 709,367 ms/op
+# Warmup Iteration   7: 677,652 ms/op
+# Warmup Iteration   8: 748,442 ms/op
+# Warmup Iteration   9: 702,072 ms/op
+# Warmup Iteration  10: 729,905 ms/op
+Iteration   1: 746,394 ms/op
+Iteration   2: 697,050 ms/op
+Iteration   3: 787,973 ms/op
+Iteration   4: 798,016 ms/op
+Iteration   5: 810,352 ms/op
+Iteration   6: 729,132 ms/op
+Iteration   7: 857,099 ms/op
+Iteration   8: 797,937 ms/op
+Iteration   9: 855,191 ms/op
+Iteration  10: 849,404 ms/op
+
+# Run progress: 73,33% complete, ETA 00:03:08
+# Fork: 3 of 5
+# Warmup Iteration   1: 943,932 ms/op
+# Warmup Iteration   2: 809,648 ms/op
+# Warmup Iteration   3: 704,043 ms/op
+# Warmup Iteration   4: 707,264 ms/op
+# Warmup Iteration   5: 729,236 ms/op
+# Warmup Iteration   6: 712,520 ms/op
+# Warmup Iteration   7: 718,764 ms/op
+# Warmup Iteration   8: 718,246 ms/op
+# Warmup Iteration   9: 744,396 ms/op
+# Warmup Iteration  10: 711,109 ms/op
+Iteration   1: 766,492 ms/op
+Iteration   2: 726,343 ms/op
+Iteration   3: 693,218 ms/op
+Iteration   4: 692,401 ms/op
+Iteration   5: 682,952 ms/op
+Iteration   6: 729,572 ms/op
+Iteration   7: 815,655 ms/op
+Iteration   8: 770,297 ms/op
+Iteration   9: 746,055 ms/op
+Iteration  10: 847,759 ms/op
+
+# Run progress: 76,67% complete, ETA 00:02:47
+# Fork: 4 of 5
+# Warmup Iteration   1: 830,298 ms/op
+# Warmup Iteration   2: 745,352 ms/op
+# Warmup Iteration   3: 719,226 ms/op
+# Warmup Iteration   4: 707,352 ms/op
+# Warmup Iteration   5: 721,879 ms/op
+# Warmup Iteration   6: 697,017 ms/op
+# Warmup Iteration   7: 720,714 ms/op
+# Warmup Iteration   8: 714,647 ms/op
+# Warmup Iteration   9: 703,113 ms/op
+# Warmup Iteration  10: 806,880 ms/op
+Iteration   1: 734,537 ms/op
+Iteration   2: 709,425 ms/op
+Iteration   3: 703,573 ms/op
+Iteration   4: 714,994 ms/op
+Iteration   5: 708,293 ms/op
+Iteration   6: 841,644 ms/op
+Iteration   7: 783,694 ms/op
+Iteration   8: 747,935 ms/op
+Iteration   9: 804,696 ms/op
+Iteration  10: 714,778 ms/op
+
+# Run progress: 80,00% complete, ETA 00:02:25
+# Fork: 5 of 5
+# Warmup Iteration   1: 815,631 ms/op
+# Warmup Iteration   2: 728,772 ms/op
+# Warmup Iteration   3: 717,121 ms/op
+# Warmup Iteration   4: 785,894 ms/op
+# Warmup Iteration   5: 704,091 ms/op
+# Warmup Iteration   6: 706,987 ms/op
+# Warmup Iteration   7: 706,794 ms/op
+# Warmup Iteration   8: 734,642 ms/op
+# Warmup Iteration   9: 696,158 ms/op
+# Warmup Iteration  10: 698,937 ms/op
+Iteration   1: 740,361 ms/op
+Iteration   2: 838,670 ms/op
+Iteration   3: 747,815 ms/op
+Iteration   4: 683,773 ms/op
+Iteration   5: 674,444 ms/op
+Iteration   6: 688,514 ms/op
+Iteration   7: 689,983 ms/op
+Iteration   8: 697,945 ms/op
+Iteration   9: 661,814 ms/op
+Iteration  10: 728,965 ms/op
+
+
+Result "org.example.SparseMatrixBenchmark.testCustomSparseMatrixMultiplication":
+  743,196 ±(99.9%) 27,030 ms/op [Average]
+  (min, avg, max) = (661,814, 743,196, 857,099), stdev = 54,602
+  CI (99.9%): [716,166, 770,226] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8, OpenJDK 64-Bit Server VM, 17.0.8+7-b1000.22
+# VM invoker: C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\jbr\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=56617:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.SparseMatrixBenchmark.testCustomSparseMatrixMultiplication
+# Parameters: (n = 1000)
+
+# Run progress: 83,33% complete, ETA 00:02:02
+# Fork: 1 of 5
+# Warmup Iteration   1: 6401,262 ms/op
+# Warmup Iteration   2: 6344,080 ms/op
+# Warmup Iteration   3: 6177,661 ms/op
+# Warmup Iteration   4: 6364,819 ms/op
+# Warmup Iteration   5: 6440,053 ms/op
+# Warmup Iteration   6: 6760,408 ms/op
+# Warmup Iteration   7: 6606,180 ms/op
+# Warmup Iteration   8: 6449,267 ms/op
+# Warmup Iteration   9: 6488,900 ms/op
+# Warmup Iteration  10: 6819,631 ms/op
+Iteration   1: 7090,565 ms/op
+Iteration   2: 6832,877 ms/op
+Iteration   3: 6856,435 ms/op
+Iteration   4: 7049,711 ms/op
+Iteration   5: 6693,194 ms/op
+Iteration   6: 6271,503 ms/op
+Iteration   7: 6327,325 ms/op
+Iteration   8: 6341,049 ms/op
+Iteration   9: 6177,423 ms/op
+Iteration  10: 7021,677 ms/op
+
+# Run progress: 86,67% complete, ETA 00:01:54
+# Fork: 2 of 5
+# Warmup Iteration   1: 6780,074 ms/op
+# Warmup Iteration   2: 6425,457 ms/op
+# Warmup Iteration   3: 6298,755 ms/op
+# Warmup Iteration   4: 6293,816 ms/op
+# Warmup Iteration   5: 6523,470 ms/op
+# Warmup Iteration   6: 6345,406 ms/op
+# Warmup Iteration   7: 6356,786 ms/op
+# Warmup Iteration   8: 6332,970 ms/op
+# Warmup Iteration   9: 6533,811 ms/op
+# Warmup Iteration  10: 6293,731 ms/op
+Iteration   1: 6196,976 ms/op
+Iteration   2: 6267,247 ms/op
+Iteration   3: 6737,282 ms/op
+Iteration   4: 6740,714 ms/op
+Iteration   5: 7001,585 ms/op
+Iteration   6: 6618,410 ms/op
+Iteration   7: 6845,542 ms/op
+Iteration   8: 6280,655 ms/op
+Iteration   9: 6160,319 ms/op
+Iteration  10: 6252,582 ms/op
+
+# Run progress: 90,00% complete, ETA 00:01:37
+# Fork: 3 of 5
+# Warmup Iteration   1: 6457,324 ms/op
+# Warmup Iteration   2: 6331,523 ms/op
+# Warmup Iteration   3: 6153,328 ms/op
+# Warmup Iteration   4: 6273,297 ms/op
+# Warmup Iteration   5: 6459,593 ms/op
+# Warmup Iteration   6: 6332,784 ms/op
+# Warmup Iteration   7: 6222,908 ms/op
+# Warmup Iteration   8: 6398,896 ms/op
+# Warmup Iteration   9: 6217,901 ms/op
+# Warmup Iteration  10: 6379,810 ms/op
+Iteration   1: 6245,229 ms/op
+Iteration   2: 6278,620 ms/op
+Iteration   3: 6239,662 ms/op
+Iteration   4: 6589,112 ms/op
+Iteration   5: 7198,867 ms/op
+Iteration   6: 6404,214 ms/op
+Iteration   7: 6212,225 ms/op
+Iteration   8: 6281,627 ms/op
+Iteration   9: 6305,753 ms/op
+Iteration  10: 6236,148 ms/op
+
+# Run progress: 93,33% complete, ETA 00:01:11
+# Fork: 4 of 5
+# Warmup Iteration   1: 6505,015 ms/op
+# Warmup Iteration   2: 6405,003 ms/op
+# Warmup Iteration   3: 6213,582 ms/op
+# Warmup Iteration   4: 6412,519 ms/op
+# Warmup Iteration   5: 6378,190 ms/op
+# Warmup Iteration   6: 6358,055 ms/op
+# Warmup Iteration   7: 6386,218 ms/op
+# Warmup Iteration   8: 6360,174 ms/op
+# Warmup Iteration   9: 6372,529 ms/op
+# Warmup Iteration  10: 6291,742 ms/op
+Iteration   1: 6302,365 ms/op
+Iteration   2: 7177,772 ms/op
+Iteration   3: 6712,573 ms/op
+Iteration   4: 6200,992 ms/op
+Iteration   5: 6224,004 ms/op
+Iteration   6: 6187,242 ms/op
+Iteration   7: 6152,251 ms/op
+Iteration   8: 6222,067 ms/op
+Iteration   9: 6273,088 ms/op
+Iteration  10: 6239,711 ms/op
+
+# Run progress: 96,67% complete, ETA 00:00:38
+# Fork: 5 of 5
+# Warmup Iteration   1: 6542,437 ms/op
+# Warmup Iteration   2: 6458,972 ms/op
+# Warmup Iteration   3: 6322,984 ms/op
+# Warmup Iteration   4: 6302,244 ms/op
+# Warmup Iteration   5: 6574,421 ms/op
+# Warmup Iteration   6: 6329,807 ms/op
+# Warmup Iteration   7: 6375,354 ms/op
+# Warmup Iteration   8: 6314,754 ms/op
+# Warmup Iteration   9: 6563,118 ms/op
+# Warmup Iteration  10: 6279,626 ms/op
+Iteration   1: 6350,144 ms/op
+Iteration   2: 6292,572 ms/op
+Iteration   3: 6620,152 ms/op
+Iteration   4: 7124,267 ms/op
+Iteration   5: 6627,796 ms/op
+Iteration   6: 6300,911 ms/op
+Iteration   7: 6375,538 ms/op
+Iteration   8: 6357,942 ms/op
+Iteration   9: 6331,112 ms/op
+Iteration  10: 6291,757 ms/op
+
+
+Result "org.example.SparseMatrixBenchmark.testCustomSparseMatrixMultiplication":
+  6482,376 ±(99.9%) 157,289 ms/op [Average]
+  (min, avg, max) = (6152,251, 6482,376, 7198,867), stdev = 317,732
+  CI (99.9%): [6325,086, 6639,665] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:21:00
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                                    (n)  Mode  Cnt     Score     Error  Units
+SparseMatrixBenchmark.testApacheSparseMatrixMultiplication   256  avgt   50    21,242 ±   0,177  ms/op
+SparseMatrixBenchmark.testApacheSparseMatrixMultiplication   512  avgt   50   174,651 ±   3,835  ms/op
+SparseMatrixBenchmark.testApacheSparseMatrixMultiplication  1000  avgt   50  1302,228 ±  33,706  ms/op
+SparseMatrixBenchmark.testCustomSparseMatrixMultiplication   256  avgt   50    73,441 ±   1,609  ms/op
+SparseMatrixBenchmark.testCustomSparseMatrixMultiplication   512  avgt   50   743,196 ±  27,030  ms/op
+SparseMatrixBenchmark.testCustomSparseMatrixMultiplication  1000  avgt   50  6482,376 ± 157,289  ms/op
+
+Benchmark result is saved to sparse_benchmark_results.json
